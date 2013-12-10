@@ -3,15 +3,27 @@
   clear: both;
 
   h1 {
-      font-family: 'gt_walsheim_medium';
+      font-family: 'gt_walsheim_medium', helvetica;
       font-weight: 500;
       font-style: normal;
-      font-size: 60px;
+      font-size: 40px;
       text-align: center;
       margin: 60px auto;
-      color: #454545;
-      line-height: 55px;
+      color: #00b490;
+      line-height: 45px;
     }
-    
 }
 
+.work_section { 
+  text-align: center;
+
+  .card {
+    height: 100px;
+    background-color: #00b490;
+    border: 9px solid #fff;
+    border-radius: 10px;
+    margin: 15px;
+    display: inline-block;
+    width: 20%;
+  }
+}
