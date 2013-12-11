@@ -1,15 +1,16 @@
+$green: #00b490;
+
 .hero {
-  height: 200px;
   clear: both;
 
   h1 {
       font-family: 'gt_walsheim_medium', helvetica;
       font-weight: 500;
       font-style: normal;
-      font-size: 40px;
+      font-size: 45px;
       text-align: center;
-      margin: 60px auto;
-      color: #00b490;
+      margin: 70px 0 70px 0;
+      color: $green;
       line-height: 45px;
     }
 }
@@ -18,12 +19,28 @@
   text-align: center;
 
   .card {
-    height: 100px;
+    height: 200px;
     background-color: #00b490;
     border: 9px solid #fff;
     border-radius: 10px;
     margin: 15px;
     display: inline-block;
     width: 20%;
+    position: relative;
+
+
+    p{
+      position: absolute;
+      top: 50px;
+      left: 42%;
+      font-family: 'gt_walsheim_medium', helvetica;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+
   }
 }

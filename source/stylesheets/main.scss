@@ -1,16 +1,38 @@
 @charset "utf-8";
 
-
 body {
   background-color: #e5e5e5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased !important;
 }
 
+a{
+  text-decoration: none;
+  color: #474747;
+}
+
+$green: #00b490;
+
 nav {
   height: 70px;
   background-color: #fff;
   width: 100%;
+
+  .logo {
+    font-family: 'gt_walsheim_bold';
+    font-size: 30px;
+    float: left;
+    margin: 12px 0 0 20px;
+    color: $green;
+    border: 4px solid #eaeaea;
+    padding: 1px 5px 1px 5px;
+    transition: background-color 0.4s ease-in-out;
+  }
+
+  a:hover .logo {
+    color: #fff;
+    background-color: $green;
+  }
   
   img {
     float: left;
@@ -30,7 +52,12 @@ nav {
       font-size: 18px;
       letter-spacing: 1px;
       padding-right: 30px;
-      color: #3c3c3c;
+      color: #474747;
+
+        & :hover {
+          border-bottom: 3px solid $green;
+          transition: border-bottom 0.2s ease-in-out;
+        }
     }
   }
 }

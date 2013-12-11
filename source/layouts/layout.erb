@@ -9,16 +9,20 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
     <%= javascript_include_tag  "all" %>
-    <%= stylesheet_link_tag "normalize", "fonts", "all", "main", "custom" %>
+    <%= stylesheet_link_tag "normalize", "fonts", "all", "main", "custom", "animate" %>
   </head>
   
   <body>
     <nav>
-      <img src="images/logo.svg">
+      <a href ="#">
+        <div class="logo">
+          MDW
+        </div>
+      </a>
         <ul>
-          <li>Work</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
@@ -27,7 +31,6 @@
   <footer>
     <p> this is where all da footer goes</p>
   </footer>
-
 
   </body>
 </html>
