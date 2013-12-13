@@ -1,4 +1,5 @@
 $green: #00b490;
+$purple: #5a5090;
 
 .hero {
   clear: both;
@@ -10,7 +11,7 @@ $green: #00b490;
       font-size: 45px;
       text-align: center;
       margin: 70px 0 70px 0;
-      color: $green;
+      color: $purple;
       line-height: 45px;
     }
 }
@@ -18,29 +19,57 @@ $green: #00b490;
 .work_section { 
   text-align: center;
 
+  .urbancompass {
+      background: url(images/urbancompass.jpg) no-repeat;
+      background-size:100%;
+    }
+
+  .drewandlacey {
+    background: url(images/drewandlacey.jpg) no-repeat;
+    background-size:100%;
+  }
+
+
   .card {
-    height: 200px;
-    background-color: #00b490;
     border: 9px solid #fff;
     border-radius: 10px;
     margin: 15px;
     display: inline-block;
-    width: 20%;
+    width: 25%;
     position: relative;
+    height: 200px;
+
+      .overlay{
+        background-color: rgba(0, 180, 144, .8);
+        height: 100%;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+       &:hover{
+        background-color: rgba(90, 80, 144, .8) ;
+    }
+  }
 
 
-    p{
+    p {
       position: absolute;
-      top: 50px;
-      left: 42%;
+      top: 40%;
       font-family: 'gt_walsheim_medium', helvetica;
       color: #fff;
-      font-size: 20px;
+      font-size: 22px;
+      margin: 0 auto;
+      width: 100%;
     }
 
     img {
       width: 100%;
+      top: 0;
+      bottom: 0;
     }
 
   }
 }
+
