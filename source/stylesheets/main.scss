@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+
+
+ ::selection      {background: rgb(255,255,158);}
+ ::-moz-selection   {background: rgb(255,255,158);}
+ img::selection     {background: transparent;}
+ img::-moz-selection  {background: transparent;}
+ body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
 body {
   background-color: #e5e5e5;
   text-rendering: optimizeLegibility;
@@ -12,11 +20,15 @@ a{
 }
 
 $green: #00b490;
+$purple: #5a5090;
 
-nav {
+
+#header {
   height: 70px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, .8);
   width: 100%;
+  position: fixed;
+  z-index: 10;
 
   .logo {
     font-family: 'gt_walsheim_bold';
@@ -55,7 +67,7 @@ nav {
       color: #474747;
 
         & :hover {
-          border-bottom: 3px solid $green;
+          border-bottom: 3px solid $purple;
           transition: border-bottom 0.1s ease-in-out;
         }
     }

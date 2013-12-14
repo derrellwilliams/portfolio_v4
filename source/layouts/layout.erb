@@ -8,12 +8,29 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
-    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag  "all", "headroom", "ga", "main" %>
     <%= stylesheet_link_tag "normalize", "fonts", "all", "main", "custom", "animate" %>
+    
+    <script>
+      var headroom = new Headroom(elem, {
+    "tolerance": 5,
+    "offset": 205,
+    "classes": {
+    "initial": "animated",
+    "pinned": "slideDown",
+    "unpinned": "slideUp"
+  }
+});
+headroom.init();
+
+// to destroy
+headroom.destroy();
+    </script>
+
   </head>
   
   <body>
-    <nav>
+    <header id="header" class="animated">      
       <a href ="#">
         <div class="logo">
           MDW
@@ -25,13 +42,29 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
+    </header>
 
     <%= yield %>
 
   <footer>
     <p> this is where all da footer goes</p>
   </footer>
+
+  <script type="text/javascript" async="" src="./Headroom_files/ga.js"></script><script src="./Headroom_files/main.js"></script>
+<script>
+(function() {
+    var header = new Headroom(document.querySelector("#header"), {
+        tolerance: 5,
+        offset : 180,
+        classes: {
+          initial: "animated",
+          pinned: "slideDown",
+          unpinned: "slideUp"
+        }
+    });
+    header.init();
+}());
+</script>
 
   </body>
 </html>
