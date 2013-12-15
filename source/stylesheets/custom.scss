@@ -1,5 +1,4 @@
-$green: #00b490;
-$purple: #5a5090;
+@import 'main';
 
 .hero {
   clear: both;
@@ -12,7 +11,7 @@ $purple: #5a5090;
       text-align: center;
       margin: 0px 0 70px 0;
       padding-top: 140px;
-      color: $green;
+      color: $purple;
       line-height: 45px;
     }
 }
@@ -22,14 +21,13 @@ $purple: #5a5090;
 
   .urbancompass {
       background: url(images/urbancompass.jpg) no-repeat;
-      background-size:100%;
+      background-size:cover;
     }
 
   .drewandlacey {
     background: url(images/drewandlacey.jpg) no-repeat;
-    background-size:100%;
+    background-size:cover;
   }
-
 
   .card {
     border: 9px solid #fff;
@@ -38,22 +36,17 @@ $purple: #5a5090;
     display: inline-block;
     width: 25%;
     position: relative;
-    height: 200px;
+    height: 240px;
 
       .overlay{
         background-color: rgba(0, 180, 144, .8);
         height: 100%;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        @include transition;
 
        &:hover{
         background-color: rgba(90, 80, 144, .8) ;
     }
   }
-
 
     p {
       position: absolute;

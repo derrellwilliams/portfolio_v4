@@ -1,12 +1,10 @@
 @charset "utf-8";
 
-
-
- ::selection      {background: rgb(255,255,158);}
- ::-moz-selection   {background: rgb(255,255,158);}
- img::selection     {background: transparent;}
- img::-moz-selection  {background: transparent;}
- body {-webkit-tap-highlight-color: rgb(255,255,158);}
+::selection      {background: rgb(255,255,158);}
+::-moz-selection   {background: rgb(255,255,158);}
+img::selection     {background: transparent;}
+img::-moz-selection  {background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 body {
   background-color: #e5e5e5;
@@ -14,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
-a{
+a {
   text-decoration: none;
   color: #474747;
 }
@@ -22,6 +20,14 @@ a{
 $green: #00b490;
 $purple: #5a5090;
 
+
+@mixin transition {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 #header {
   height: 70px;
@@ -38,7 +44,7 @@ $purple: #5a5090;
     color: $green;
     border: 4px solid #eaeaea;
     padding: 1px 5px 1px 5px;
-    transition: all 0.4s ease-in-out;
+    @include transition;
   }
 
   a:hover .logo {
@@ -69,7 +75,7 @@ $purple: #5a5090;
 
         & :hover {
           border-bottom: 3px solid $purple;
-          transition: border-bottom 0.1s ease-in-out;
+          @include transition;
         }
     }
   }
