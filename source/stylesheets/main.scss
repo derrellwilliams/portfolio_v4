@@ -29,12 +29,19 @@ $purple: #5a5090;
   transition: all 0.2s ease-in-out;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #header {
   height: 70px;
   background-color: rgba(255, 255, 255, .8);
   width: 100%;
   position: fixed;
   z-index: 10;
+  top: 0;
 
   .logo {
     font-family: 'gt_walsheim_bold';

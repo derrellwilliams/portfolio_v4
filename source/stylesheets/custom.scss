@@ -50,7 +50,7 @@
 
     p {
       position: absolute;
-      top: 40%;
+      top: 42%;
       font-family: 'gt_walsheim_medium', helvetica;
       color: #fff;
       font-size: 22px;
@@ -67,3 +67,67 @@
   }
 }
 
+/*The About Page*/
+
+.about_bg {
+  margin-top: 70px;
+  background-image: url("images/about.jpg");
+  background-repeat: repeat-x;
+  height: 700px;
+  -webkit-animation-name: translate;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 8s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  .photo_overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 180, 144, 0.5); 
+    
+    h1 {
+      font-family: 'gt_walsheim_medium';
+      color: #fff;
+      text-align: center;
+      max-width: 40%;
+      margin: 0 auto;
+      padding: 10%;
+      font-size: 45px;
+    }
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+@-moz-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
