@@ -38,12 +38,13 @@ $purple: #5a5090;
     color: $green;
     border: 4px solid #eaeaea;
     padding: 1px 5px 1px 5px;
-    transition: background-color 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   a:hover .logo {
-    color: #fff;
-    background-color: $green;
+        border: 4px solid $purple;
+        color: $purple;
+
   }
   
   img {
