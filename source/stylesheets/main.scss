@@ -6,6 +6,14 @@ img::selection     {background: transparent;}
 img::-moz-selection  {background: transparent;}
 body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
+@mixin transition {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 body {
   background-color: #e5e5e5;
   text-rendering: optimizeLegibility;
@@ -21,13 +29,7 @@ $green: #00b490;
 $purple: #5a5090;
 
 
-@mixin transition {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+
 
 .group:after {
   content: "";

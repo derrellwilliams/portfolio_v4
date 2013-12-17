@@ -1,7 +1,6 @@
 @import 'main';
 
 .hero {
-  clear: both;
 
   h1 {
       font-family: 'gt_walsheim_medium', helvetica;
@@ -32,7 +31,7 @@
   .card {
     border: 9px solid #fff;
     border-radius: 10px;
-    margin: 15px;
+    margin: 12px;
     display: inline-block;
     width: 25%;
     position: relative;
@@ -74,18 +73,7 @@
   background-image: url("images/about.jpg");
   background-repeat: repeat-x;
   height: 700px;
-  -webkit-animation-name: translate;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: rotate;
-    -moz-animation-duration: 8s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    animation-name: rotate;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
 
   .photo_overlay{
     width: 100%;
@@ -104,30 +92,3 @@
   }
 }
 
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-
-@-moz-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
