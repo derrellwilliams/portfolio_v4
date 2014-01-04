@@ -97,4 +97,36 @@ footer {
   width: 100%;
 }
 
+.hamburger {
+   display: none; 
+   top: 0;
+   z-index: 100;
+  }
+
+
+@media (max-width: 549px) {
+  .hamburger {
+     display: block; 
+     float: right;
+     padding: 8px;
+
+     img {
+      z-index: 11;
+      position: absolute;
+      right: 18px;
+      top: 22px;
+     }
+  }
+}
+
+
+@media (max-width: 550px) {
+  header {
+    ul {
+      display: none;
+    }  
+  }
+    
+}
+
 
