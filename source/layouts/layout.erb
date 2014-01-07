@@ -9,7 +9,11 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Matthew D. Williams" %></title>
     <%= javascript_include_tag  "all", "headroom", "ga", "main" %>
-    <%= stylesheet_link_tag "normalize", "fonts", "all", "main", "custom", "animate" %>
+    <%= stylesheet_link_tag "normalize", "fonts", "all", "main", "custom", "animate", "ss-social" %>
+
+    <link href="fonts/ss-social.css" rel="stylesheet" />
+
+
 
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/5c3caadb-8442-458d-8eaa-31b458ccafa2.js"></script>
     
@@ -52,17 +56,21 @@
         </a>
       </div>
 
-      
-
-
-    <%= yield %>
+<%= yield %>
 
   <footer>
-    <p> this is where all da footer goes</p>
+    <h2 class="rights"> Matthew D. Williams</h2>
+    <p class= icons>
+        <a href="https://www.facebook.com/matthew.derrell.williams"i class="ss-icon ss-social-circle">Facebook</i></a>
+        <a href="html/instagram.html" i class="ss-icon ss-social-circle">Instagram</i></a>
+        <a href="http://dribbble.com/derrellwilliams"i class="ss-icon ss-social-circle">Dribbble</i></a>
+        <a href="http://twitter.com/derrellwilliams" i class="ss-icon ss-social-circle">Twitter</i></a>
+        <a href="http://derrellsaw.tumblr.com" i class="ss-icon ss-social-circle">Tumblr</i></a>
+    </p>
   </footer>
 
   <script type="text/javascript" async="" src="./Headroom_files/ga.js"></script><script src="./Headroom_files/main.js"></script>
-<script>
+  <script>
 (function() {
     var header = new Headroom(document.querySelector("#header"), {
         tolerance: 5,
