@@ -7,7 +7,7 @@
 * 
 * Upload this file to your web server
 * and place this within your <head> tags.
-* <link href="fonts/ss-social.css" rel="stylesheet" />
+* <link href="webfonts/ss-social.css" rel="stylesheet" />
 */
 
 @font-face {
@@ -50,26 +50,22 @@
   font-feature-settings: "liga", "dlig";
 }
 
-p.icons {
-	margin: 35px;
-	float: right;
+p.icons{
+	padding-top:80px;
+	padding-bottom:20px;
+	margin:auto;
 	text-align:center;
-	font-size: 23px;
-	color: #fff;
+	font-size:60px;
+	color:#464646;
+	
 }
 
 p.icons a {
-	color: #fff;
-	padding-right: 3%;
+	color:#343434;
 }
 
 p.icons a:hover{
-	color: #00b490;
-	-webkit-transition: all 0.2s ease-in-out;
-  	-moz-transition: all 0.2s ease-in-out;
-  	-o-transition: all 0.2s ease-in-out;
-  	-ms-transition: all 0.2s ease-in-out;
-  	transition: all 0.2s ease-in-out;
+	color:#656565;
 	
 }
 
@@ -80,25 +76,29 @@ p.icons a:hover{
 .ss-facebook:before{content:''}.ss-twitter:before{content:''}.ss-linkedin:before{content:''}.ss-googleplus:before{content:''}.ss-tumblr:before{content:''}.ss-wordpress:before{content:''}.ss-blogger:before{content:''}.ss-posterous:before{content:''}.ss-youtube:before{content:''}.ss-vimeo:before{content:''}.ss-flickr:before{content:''}.ss-instagram:before{content:''}.ss-pinterest:before{content:''}.ss-dribbble:before{content:''}.ss-behance:before{content:''}.ss-github:before{content:''}.ss-paypal:before{content:''}.ss-foursquare:before{content:''}.ss-skype:before{content:''}.ss-mail:before{content:'✉'}
 
 
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-	footer {
-		margin: 0 auto;
-		text-align: center;
-	}
-
+@media only screen and (min-width: 0px) and (max-width: 649px) {
 	p.icons{
-		float: left;
-		text-align: center;	
-		font-size: 30px;
-		margin: 13px 0 13px 50px;
-	}
-
-	.rights { 
-		display: none;
-	}
+	padding-top:80px;
+	padding-bottom:20px;
+	margin:auto;
+	text-align:center;
+	font-size:50px;
+	color:#464646;
+	
+}
 	
 
-
+@media screen and (max-width: 480px)  {
+	
+	p.icons{
+	padding-top:80px;
+	padding-bottom:20px;
+	margin:auto;
+	text-align:center;
+	font-size:40px;
+	color:#464646;
+	
+}
 	
 	
 	
