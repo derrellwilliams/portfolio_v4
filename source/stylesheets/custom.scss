@@ -16,62 +16,7 @@
 }
 
 .work_section { 
-  text-align: center;
-
-  .urbancompass {
-      background: url(images/urbancompass.jpg) no-repeat;
-      background-size:cover;
-    }
-
-  .drewandlacey {
-    background: url(images/drewandlacey.jpg) no-repeat;
-    background-size:cover;
-  }
-
-  .ecofashion {
-    background: url(images/eco.jpg) no-repeat;
-    background-size:cover;
-  }
-
-  .sovisit {
-    background: url(images/sovisit.jpg) no-repeat;
-    background-size:cover;
-  }
-
-  .getoutskiing {
-    background: url(images/getoutskiing.jpg) no-repeat;
-    background-size:cover;
-  }
-
-  .afterbedtime {
-    background: url(images/afterbedtime.jpg) no-repeat;
-    background-size:cover;
-  }
-
-  .baerae {
-    background: url(images/baerae.jpg) no-repeat;
-    background-size:cover;
-  }  
-
-  .westelm {
-    background: url(images/westelm.jpg) no-repeat;
-    background-size:cover;
-  } 
-
-  .rockport {
-    background: url(images/rockport.jpg) no-repeat;
-    background-size:cover;
-  }
-
-  .letterpress {
-    background: url(images/letterpress.jpg) no-repeat;
-    background-size:cover;
-  }  
-
-  .adornia {
-    background: url(images/adornia.jpg) no-repeat;
-    background-size: cover;
-  }    
+  text-align: center; 
 
   .card {
     border: 9px solid #fff;
@@ -91,6 +36,8 @@
         background-color: rgba(90, 80, 144, .8) ;
     }
   }
+
+
 
   .project_page {
     margin-top: 2350px;
@@ -149,6 +96,61 @@
     }
   }
 }
+
+  .urbancompass {
+      background: url(images/urbancompass.jpg) no-repeat;
+      background-size:cover;
+    }
+
+  .drewandlacey {
+    background: url(images/drewandlacey.jpg) no-repeat;
+    background-size:cover;
+  }
+
+  .ecofashion {
+    background: url(images/eco.jpg) no-repeat;
+    background-size:cover;
+  }
+
+  .sovisit {
+    background: url(images/sovisit.jpg) no-repeat;
+    background-size:cover;
+  }
+
+  .getoutskiing {
+    background: url(images/getoutskiing.jpg) no-repeat;
+    background-size:cover;
+  }
+
+  .afterbedtime {
+    background: url(images/afterbedtime.jpg) no-repeat;
+    background-size:cover;
+  }
+
+  .baerae {
+    background: url(images/baerae.jpg) no-repeat;
+    background-size:cover;
+  }  
+
+  .westelm {
+    background: url(images/westelm.jpg) no-repeat;
+    background-size:cover;
+  } 
+
+  .rockport {
+    background: url(images/rockport.jpg) no-repeat;
+    background-size:cover;
+  }
+
+  .letterpress {
+    background: url(images/letterpress.jpg) no-repeat;
+    background-size:cover;
+  }  
+
+  .adornia {
+    background: url(images/adornia.jpg) no-repeat;
+    background-size: cover;
+  }   
 
 /*The About Page*/
 
@@ -230,6 +232,34 @@
     font-size: 16px;
     line-height: 31px;
     color: #575757;
+
+    span {
+      font-family: 'gt_walsheim_bold';
+      color: $purple;
+      text-transform: uppercase;
+      padding-left: 10px;
+      @include transition;
+      
+      a {
+        color: $purple;
+        @include transition;
+
+          span{
+            position: relative;
+            right: 4px;
+            @include transition;
+
+          }
+      }
+
+      &:hover a {
+        color: $green;
+      }
+
+      &:hover a span {
+        right: -3px;
+      }
+    }
   }
 
   p.no_headline{
@@ -402,6 +432,73 @@
   }
 
   .header_type {
-    padding-top: 30px;
+    padding-top: 50px;
   } 
 }
+
+  .project_selector {
+
+    .card {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      height: 300px;
+
+      .overlay{
+        background-color: rgba(0, 180, 144, .9);
+        height: 100%;
+        @include transition;
+        margin-top: -30px;
+
+       &:hover{
+        background-color: rgba(90, 80, 144, .8) ;
+       }
+
+       &:hover span.right {
+        right: -30px;
+      }
+
+      &:hover span.left {
+        left: -30px;
+      }
+      }
+    }
+
+    p {
+      font-family: 'gt_walsheim_bold', helvetica;
+      font-style: normal;
+      font-size: 30px;
+      text-align: center;
+      color: #fff;
+      padding-top: 130px;
+
+      span.right {
+        position: relative;
+        right: -10px;
+        @include transition;
+      }
+
+      span.left {
+        position: relative;
+        left: -10px;
+        @include transition;
+      }
+
+    
+    }
+
+    .left_selector {
+      width: 50%;
+      background-color: $green;
+      float: left;
+      height: 100%;
+
+    }
+
+    .right_selector {
+      width: 50%;
+      background-color: $green;
+      float: right;
+
+    }
+  }

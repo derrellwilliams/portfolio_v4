@@ -62,9 +62,8 @@ p.icons a {
 	color: #fff;
 }
 
-p.icons a:hover{
+p.icons a:hover {
 	color: $green;
-	
 }
 
 .ss-icon.ss-social-circle, [class^="ss-"].ss-social-circle:before, [class*=" ss-"].ss-social-circle:before {
@@ -77,13 +76,13 @@ p.icons a:hover{
 
 @media screen and (max-width: 480px)  {
 	
-	p.icons{
+	p.icons {
 	margin: 0px auto;
 	text-align:center;
 	font-size: 30px;
 	color: #fff;
 	float: none;
-	padding: 20px;
+	padding: 18px;
 }
 	
 	
