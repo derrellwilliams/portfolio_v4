@@ -166,6 +166,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 180, 144, 0.5); 
+    margin-top: -70px;
 
     .profile {
       width: 190px;
@@ -173,7 +174,7 @@
       margin: 0 auto;
       text-align: center;
       background: url(images/about_profile.png) no-repeat;
-      top: 70px;
+      top: 140px;
       position: relative;
 
     }
@@ -183,7 +184,7 @@
       color: #fff;
       text-align: center;
       max-width: 55%;
-      margin: 45px auto;
+      margin: 115px auto;
       padding: 4%;
       font-size: 27px;
       line-height: 38px;
@@ -230,6 +231,10 @@
 
 .ecofashion_header {
   background-image: url("images/ecofashion/ecofashion_header.jpg");
+}
+
+.sovisit_header {
+  background-image: url("images/sovisit/sovisit_header.jpg");
 }
 
 
