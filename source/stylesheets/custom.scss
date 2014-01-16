@@ -1,5 +1,16 @@
 @import 'main';
 
+.hero_image {
+  position: relative;
+  top: 0;
+  height: 800px;
+  background-color: $green;
+  background-image: url("images/hero4.jpg");
+  background-repeat: none;
+  width: 100%;  
+  background-size: cover;
+}
+
 .hero {
 
   h1 {
@@ -10,7 +21,7 @@
       text-align: center;
       margin: 0px 0 70px 0;
       padding-top: 140px;
-      color: $purple;
+      color: #fff;
       line-height: 45px;
     }
 }
@@ -157,9 +168,8 @@
 .about_bg {
   margin-top: 70px;
   background-image: url("images/about9.jpg");
-  background-repeat: repeat-x;
-  height: 700px;
-  filter: blur(2px);
+  background-repeat: none;
+  background-size: cover;
 
 
   .photo_overlay{
