@@ -197,7 +197,19 @@
       margin: 115px auto;
       padding: 4%;
       font-size: 27px;
-      line-height: 38px;
+      line-height: 42px;
+
+      a {
+        color: #fff;
+        border-bottom: 3px solid #fff;
+        padding-bottom: 2px;
+        @include transition;
+
+      }
+
+      & a:hover{
+        color: $purple;
+        }
     }
   }
 }
@@ -315,6 +327,10 @@
 
 .sovisit_header {
   background-image: url("images/sovisit/sovisit_header.jpg");
+}
+
+.afterbedtime_header {
+  background-image: url("images/afterbedtime/afterbedtime_header.jpg");
 }
 
 .baerae_header {
