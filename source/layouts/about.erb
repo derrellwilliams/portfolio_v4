@@ -8,13 +8,9 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Matthew D. Williams" %></title>
-    <%= javascript_include_tag  "all", "headroom", "ga", "main" %>
+    <%= javascript_include_tag  "all", "headroom", "ga", "main", "instafeed" "instafeed.min" %>
     <%= stylesheet_link_tag "normalize", "fonts", "all", "main", "custom", "animate", "ss-social" %>
     <link href="fonts/ss-social.css" rel="stylesheet" />
-
-
-
-    <script type="text/javascript" src="http://fast.fonts.net/jsapi/5c3caadb-8442-458d-8eaa-31b458ccafa2.js"></script>
     
     <script>
       var headroom = new Headroom(elem, {
@@ -30,6 +26,15 @@
 
     // to destroy
     headroom.destroy();
+    </script>
+
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+          get: 'user',
+          userId: 6287031,
+          accessToken: '6287031.467ede5.9eec0b27e4964a3ba482f1e221ef5fef'
+      });
+      userFeed.run();
     </script>
 
   </head>
@@ -57,7 +62,7 @@
 
 <%= yield %>
 
-  <footer>
+  <footer id="about_footer">
     <h2 class="rights"> Matthew D. Williams</h2>
     <p class= icons>
         <a href="https://www.facebook.com/matthew.derrell.williams"i class="ss-icon ss-social-circle">Facebook</i></a>

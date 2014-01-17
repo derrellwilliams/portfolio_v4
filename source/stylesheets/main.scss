@@ -96,6 +96,7 @@ footer {
   height: 77px;
   width: 100%;
   clear: both;
+  margin-top: 30px;
 
   .rights {
     float: left;
@@ -107,6 +108,10 @@ footer {
     color: #fff;
     margin: 25px 0 0 20px;
   }
+}
+
+#about_footer{
+  margin-top: 0px;
 }
 
 @media screen and (max-width: 480px)  {
