@@ -117,9 +117,9 @@
 }
 
   .urbancompass {
-      background: url(images/urbancompass.jpg) no-repeat;
-      background-size:cover;
-    }
+    background: url(images/urbancompass.jpg) no-repeat;
+    background-size:cover;
+  }
 
   .drewandlacey {
     background: url(images/drewandlacey.jpg) no-repeat;
@@ -438,6 +438,14 @@
   }
 }
 
+   @media (max-width: 600px) {
+
+    .work_copy_centered {
+    width: 95%;
+  }
+}
+
+
 .image_row_full {
   
   img {
@@ -646,3 +654,48 @@
 
     }
   }
+
+   @media (max-width: 600px) {
+     .project_selector {
+
+      .card {
+        .overlay{
+          margin-top: -22px;
+        }
+      }
+
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+
+   @media (max-width: 425px) {
+     .project_selector {
+
+      .card {
+        height: 100px;
+
+        .overlay{
+          margin-top: -16px;
+        &:hover{
+        background-color: rgba(90, 80, 144, .8) ;
+       }
+
+       &:hover span.right {
+        right: -10px;
+      }
+
+      &:hover span.left {
+        left: -10px;
+      }
+        }
+      }
+
+      p {
+        font-size: 16px;
+        padding-top: 40px;
+
+      }
+    }
+  }  
