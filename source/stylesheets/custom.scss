@@ -25,18 +25,18 @@
       font-family: 'gt_walsheim_medium', helvetica;
       font-weight: 500;
       font-style: normal;
-      font-size: 42px;
+      font-size: 36px;
       text-align: center;
       margin: 0px 0 70px 0;
       padding-top: 140px;
       color: #fff;
-      line-height: 45px;
+      line-height: 40px;
     }
 }
 
 .work_section { 
-  text-align: center; 
-
+  text-align: center;
+  
   .card {
     border: 9px solid #fff;
     border-radius: 10px;
@@ -138,6 +138,11 @@
 
   .getoutskiing {
     background: url(images/getoutskiing.jpg) no-repeat;
+    background-size:cover;
+  }
+
+  .newgoods {
+    background: url(images/newgoods.jpg) no-repeat;
     background-size:cover;
   }
 
@@ -344,6 +349,10 @@
 
 .ecofashion_header {
   background-image: url("images/ecofashion/ecofashion_header.jpg");
+}
+
+.newgoods_header {
+  background-image: url("images/newgoods/newgoods_header.jpg");
 }
 
 .sovisit_header {
