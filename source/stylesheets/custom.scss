@@ -321,6 +321,15 @@
   }
 }
 
+   @media (max-width: 420px) {
+    .work_header{
+      .header_type {
+        padding-top: 180px;
+      }
+    }
+  }
+
+
 .uc_header {
   background-image: url("images/urbancompass/uc_header.jpg");
 }
