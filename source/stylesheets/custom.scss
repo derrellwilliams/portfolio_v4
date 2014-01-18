@@ -442,6 +442,7 @@
 
     .work_copy_centered {
     width: 95%;
+    margin: 30px auto 60px auto;
   }
 }
 
@@ -487,6 +488,7 @@
 @media (max-width: 900px) {
   .image_row_2 {
     img {
+    margin: 5px auto;
     width: 100%;
     }
   }
@@ -516,6 +518,7 @@
 
   .image_row_3 {
   img {
+    margin: 0px auto;
     width: 100%;
   }
 }
