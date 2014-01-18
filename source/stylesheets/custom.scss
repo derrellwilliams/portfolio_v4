@@ -3,13 +3,21 @@
 .hero_image {
   position: relative;
   top: 0;
-  height: 460px;
+  height: 470px;
   background-color: $green;
-  background-image: url("images/hero6.jpg");
+  background-image: url("images/hero8.jpg");
   background-repeat: none;
   width: 100%;  
   background-size: cover;
 }
+
+@media (min-width: 1350px) {
+  .hero_image {
+    background-image: url("images/hero9.jpg");
+
+  }
+}
+
 
 .hero {
 
@@ -319,6 +327,10 @@
 
 .westelm_header {
   background-image: url("images/westelm/westelm_header.jpg");
+}
+
+.rockport_header {
+  background-image: url("images/rockport/rockport_header.jpg");
 }
 
 .ecofashion_header {
