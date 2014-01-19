@@ -114,6 +114,11 @@ footer {
   margin-top: 0px;
 }
 
+#contact_footer{
+  bottom: 0;
+  position: absolute;
+}
+
 @media screen and (max-width: 480px)  {
   .rights {
     display: none;

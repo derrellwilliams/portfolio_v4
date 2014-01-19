@@ -652,8 +652,8 @@
       &:hover span.left {
         left: -30px;
       }
-      }
     }
+  }
 
     p {
       font-family: 'gt_walsheim_bold', helvetica;
@@ -674,8 +674,6 @@
         left: -10px;
         @include transition;
       }
-
-    
     }
 
     .left_selector {
@@ -683,96 +681,116 @@
       background-color: $green;
       float: left;
       height: 100%;
-
     }
 
     .right_selector {
       width: 50%;
       background-color: $green;
       float: right;
-
     }
   }
 
-   @media (max-width: 600px) {
-     .project_selector {
+@media (max-width: 600px) {
+  .project_selector {
 
-      .card {
-        .overlay{
-          margin-top: -22px;
-        }
+    .card {
+      .overlay {
+        margin-top: -22px;
       }
+    }
 
       p {
         font-size: 22px;
       }
-    }
   }
+}
 
-   @media (max-width: 425px) {
-     .project_selector {
-
-      .card {
-        height: 100px;
-
-        .overlay{
-          margin-top: -16px;
+@media (max-width: 425px) {
+  .project_selector {
+    .card {
+      height: 100px;
+      
+      .overlay {
+        margin-top: -16px;
         &:hover{
         background-color: rgba(90, 80, 144, .8) ;
-       }
+      }
 
-       &:hover span.right {
+      &:hover span.right {
         right: -10px;
       }
 
       &:hover span.left {
         left: -10px;
       }
-        }
-      }
+    }
+  }
 
       p {
         font-size: 16px;
         padding-top: 40px;
-
       }
     }
-  }  
+}  
 
 /*The Contact Page*/
 
-.contact_bg {
-  margin-top: 70px;
+#contact_page {
   background-repeat: none;
-  background: url("images/contact_6.jpg") no-repeat center center fixed; 
+  background: url("images/contact_8.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
 
+  .contact_type  {
+    position: relative;
+    margin-top: 18%;
+    transform: translateY(-50%);
 
-    
     h1 {
       font-family: 'gt_walsheim_medium';
       color: $purple;
       text-align: center;
-      max-width: 55%;
+      max-width: 45%;
       margin: 0 auto;
-      padding: 25% 4% 4% 4%;
       font-size: 35px;
-      line-height: 42px;
+      line-height: 50px;
+      @include transition;
 
       a {
         color: $purple;
         border-bottom: 3px solid #fff;
         padding-bottom: 2px;
         @include transition;
-
       }
 
       & a:hover{
-        color: #fff;
-        }
-    
+        color: $green;
+      }
+    }
+  }
+
+
+@media (max-width: 700px) {
+   .contact_type  {
+    h1 {
+      max-width: 70%;
+      font-size: 30px;
+      line-height: 43px;
+      margin-top: 40%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+   .contact_type  {
+    h1 {
+      max-width: 90%;
+      font-size: 24px;
+      line-height: 33px;
+      margin-top: 40%;
+    }
   }
 }

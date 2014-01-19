@@ -12,6 +12,8 @@
 ###
 
 page "/about.html", :layout => "about"
+page "/contact.html", :layout => "contact"
+
 
 
 # Per-page layout changes:
