@@ -5,7 +5,7 @@
   top: 0;
   height: 470px;
   background-color: $green;
-  background-image: url("images/hero8.jpg");
+  background-image: url("images/hero_1.jpg");
   background-repeat: none;
   width: 100%;  
   background-size: cover;
@@ -13,7 +13,7 @@
 
 @media (min-width: 1350px) {
   .hero_image {
-    background-image: url("images/hero9.jpg");
+    background-image: url("images/hero_2.jpg");
 
   }
 }
@@ -105,7 +105,7 @@
 
 .hero {
     h1 {
-      font-size: 32px;
+      font-size: 24px;
       line-height: 28px;
     }
   }
@@ -181,7 +181,7 @@
 
 .about_bg {
   margin-top: 70px;
-  background-image: url("images/about9.jpg");
+  background-image: url("images/about.jpg");
   background-repeat: none;
   background-size: cover;
 
@@ -737,7 +737,7 @@
 
 #contact_page {
   background-repeat: none;
-  background: url("images/contact_8.jpg") no-repeat center center fixed; 
+  background: url("images/contact.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -771,7 +771,6 @@
       }
     }
   }
-
 
 @media (max-width: 700px) {
    .contact_type  {

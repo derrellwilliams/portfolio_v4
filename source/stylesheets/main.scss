@@ -120,41 +120,35 @@ footer {
 }
 
 @media screen and (max-width: 480px)  {
+
+  #header {
+  height: 100px;
+
+  .logo {
+    float: none;
+    text-align: center; 
+    margin: 14px 14px 5px 20px;
+    @include transition;
+  }
+
+  ul {
+    list-style: none;
+    float: none;
+    padding: 0px;
+    text-align: center;
+    margin-top: 7px;
+
+  li {
+      padding-right: 28px;
+      color: #474747;
+
+      &:last-child{
+        padding-right: 0px;
+      }
+    }
+  }
+}
   .rights {
     display: none;
   }
 }
-
-.hamburger {
-   display: none; 
-   top: 0;
-   z-index: 100;
-  }
-
-
-@media (max-width: 549px) {
-  .hamburger {
-     display: block; 
-     float: right;
-     padding: 8px;
-
-     img {
-      z-index: 11;
-      position: absolute;
-      right: 18px;
-      top: 22px;
-     }
-  }
-}
-
-
-@media (max-width: 550px) {
-  header {
-    ul {
-      display: none;
-    }  
-  }
-    
-}
-
-

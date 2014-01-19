@@ -12,10 +12,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Matthew D. Williams" %></title>
     <%= javascript_include_tag  "all", "headroom", "ga", "main" %>
-    <%= stylesheet_link_tag "normalize", "fonts", "all", "main", "custom", "animate", "ss-social" %>
+    <%= stylesheet_link_tag "normalize", "fonts", "all", "main", "custom", "animate", "ss-social"%>
     <link href="fonts/ss-social.css" rel="stylesheet" />
-
-
 
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/5c3caadb-8442-458d-8eaa-31b458ccafa2.js"></script>
     
@@ -34,7 +32,6 @@
     // to destroy
     headroom.destroy();
     </script>
-
   </head>
   
   <body>
@@ -49,24 +46,19 @@
           <li><a href="#">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-    </header>
 
-      <div class="hamburger">
-        <a href="#">
-          <img src="stylesheets/images/hamburger.svg">
-        </a>
-      </div>
-
+  </header>
 <%= yield %>
 
   <footer>
     <h2 class="rights"> Matthew D. Williams</h2>
     <p class= icons>
-        <a href="https://www.facebook.com/matthew.derrell.williams"i class="ss-icon ss-social-circle">Facebook</i></a>
+        <a href="https://www.facebook.com/matthew.derrell.williams"></a>
         <a href="html/instagram.html" i class="ss-icon ss-social-circle">Instagram</i></a>
         <a href="http://dribbble.com/derrellwilliams"i class="ss-icon ss-social-circle">Dribbble</i></a>
         <a href="http://twitter.com/derrellwilliams" i class="ss-icon ss-social-circle">Twitter</i></a>
         <a href="http://derrellsaw.tumblr.com" i class="ss-icon ss-social-circle">Tumblr</i></a>
+        <a href="http://derrellsaw.tumblr.com" i class="ss-icon ss-social-circle">Github</i></a>
     </p>
   </footer>
 
