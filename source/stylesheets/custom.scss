@@ -36,7 +36,6 @@
 
 .work_section { 
   text-align: center;
-  
   .card {
     border: 9px solid #fff;
     border-radius: 10px;
@@ -343,6 +342,10 @@
   background-image: url("images/westelm/westelm_header.jpg");
 }
 
+.letterpress_header {
+  background-image: url("images/letterpress/letterpress_header.jpg");
+}
+
 .rockport_header {
   background-image: url("images/rockport/rockport_header.jpg");
 }
@@ -482,8 +485,10 @@
     margin: 20px auto;
     width: 100%;
     box-shadow: 0px 0px 16px 4px #bcbcbc;
+  }
 
-
+  .no_shadow {
+    box-shadow: 0px 0px 0px 0px #bcbcbc;
   }
 
 }
@@ -495,7 +500,10 @@
     margin: 20px auto;
     width: 48.66%;
     box-shadow: 0px 0px 16px 4px #bcbcbc;
+  }
 
+  .no_shadow {
+    box-shadow: 0px 0px 0px 0px #bcbcbc;
   }
 
   img:first-child {
