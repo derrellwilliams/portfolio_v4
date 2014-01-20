@@ -47,7 +47,7 @@ $textgrey: #515151;
   top: 0;
 
   .logo {
-    font-family: 'gt_walsheim_bold';
+    font-family: 'gt_walsheim_bold', 'helvetica';
     font-size: 25px;
     float: left;
     margin: 14px 0 0 20px;
@@ -75,7 +75,7 @@ $textgrey: #515151;
 
   li {
       display: inline;
-      font-family: 'gt_walsheim_bold';
+      font-family: 'gt_walsheim_bold','helvetica';
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -100,7 +100,7 @@ footer {
 
   .rights {
     float: left;
-    font-family: 'gt_walsheim_bold';
+    font-family: 'gt_walsheim_bold', 'helvetica';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
