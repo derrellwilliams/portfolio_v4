@@ -253,32 +253,25 @@
 @media (max-width: 480px) {
 
   .about_bg {
-    margin-top: 70px;
+    margin-top: 20px;
 
-
-    .photo_overlay{
-      .profile {
-      }
-      
       h1 {
         max-width: 95%;
         margin: 145px auto;
         padding: 4%;
         font-size: 21px;
-        line-height: 28px;
+        line-height: 32px;
       }
     }
-  }
 
   #instafeed {
-  
-  img {
-    margin: 15px;
-    width: 230px;
-    border-radius: 10px;
-    max-width: 100%;
-  }
-}  
+    img {
+      margin: 15px;
+      width: 230px;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+  }  
 }
 
 
