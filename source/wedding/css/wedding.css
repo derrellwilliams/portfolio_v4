@@ -1,0 +1,664 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    }
+ 
+body {
+	background-color:#ffffff;
+	background-image:url('../images/topbar.png'), url('../images/bg1.jpg'), url('../images/bg2.jpg'), url('../images/bg5.png'),url('../images/bg4.png');
+	background-position: top, 500px 750px, 500px 1000px, 500px 2000px, 500px 2650px;
+	background-repeat:repeat-x;
+	font-family:Georgia;
+}
+ 
+#bg {
+	background-color:black;
+	background-repeat:repeat-x;
+	font-family:Georgia;
+	margin-top:500px;
+	padding-top:500px;
+}	
+
+.bgcopy {
+	font-family:Georgia;
+	margin-top:500px;
+} 
+ 
+#banner {
+    height: 40px;
+    margin-bottom: 1.25em;
+    padding: 1.25em;
+    }  
+ 
+
+#wrapper {
+    margin: 0 auto;
+    padding: 1.25em;
+    width: 1040px;
+    }
+ 
+    
+ 
+#banner p {
+    text-align: center;
+    }
+ 
+#nav {
+    background-color: white;
+    height: px;
+    margin-bottom: 1.25em;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    top-margin:0px;
+    outline:none;
+    }
+
+#nav a:hover img{
+	opacity:0.6;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.5s ease;
+	outline:none;
+}
+
+#nav a:focus img{
+	
+}
+
+#nav a:visited img{
+     decoration: none;
+     text-decoration: none;
+}
+    
+#nav a {
+	  -webkit-transition: all 0.5s ease;
+	  -moz-transition: all 0.5s ease;
+	  text-decoration: none;
+	  top-margin:0px;
+	  outline:none;
+}
+	
+ 
+#nav ul {
+    list-style: none;
+    padding: 10;      
+    height: 100%;
+    padding-left: 0px;
+    top-margin:0px;
+    outline:none;
+    }
+ 
+#nav li {
+    height: 100%;
+    top-margin:0px;
+    }
+ 
+#nav li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    top-margin:0px;
+    outline:none;
+    }
+ 
+#nav ul .groupa {
+    float: left;
+ 	padding: 0 3em;
+ 	top-margin:0px;
+ 	outline:none;
+ } 
+    
+   #nav ul .groupb {
+    float: right;
+    padding: 0 3em;
+    top-margin:0px;
+    outline:none;
+    
+    } 
+ 
+#nav h1 {
+    margin: 0;
+    position: absolute;
+    left: 459.5px;  
+    top: -85px;   
+    }
+ 
+#nav h1 img {
+    display: block;
+    top-margin:0px;
+    }
+    
+
+
+
+a img
+{
+  border:none;
+}
+
+
+
+
+
+
+
+
+
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:200px;
+	left:px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:1040px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container a {
+	width:1040px;
+	height:500px;
+	display:block;
+	opacity:none;
+	-webkit-transition: none;
+	-moz-transition: none;
+}
+
+.slides_container a img {
+	display:block;
+	opacity:none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	
+}
+
+/*
+	Next/prev buttons
+*/
+
+#slides .prev {
+	position:absolute;
+	top:220px;
+	left:-24px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+	outline:none;
+}
+
+#slides .next {
+	position:absolute;
+	top:220px;
+	left:1040px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+	outline:none;
+}
+
+a.next:hover img{
+	opacity:0.6;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	outline:none;
+}
+
+a.prev:hover img{
+	opacity:0.6;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	outline:none;
+}
+
+
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*
+	End of Pagination, Beginning of Our Story
+*/
+
+#side {
+	float:right;
+	margin-top:75px;
+	margin-right:-15px;
+}
+
+#history {
+	background-image:url('../images/bg1.jpg');
+	background-repeat:repeat-x;
+	margin-top: 650px;
+	margin-right:350px;
+	padding:30 px;
+	font-size: 16px;
+	font-family: Georgia;
+	line-height: 25px;
+	color: #626262;
+	-moz
+	-webkit-transition: all 0.5s ease;
+	padding-top:70px;
+	}
+
+
+/*
+	End of Pagination, Beginning of Our Story
+*/
+
+#receptionsectionimage{
+	margin-top:255px;
+	margin-left:85px;
+}
+
+
+
+#receptionsection {
+	background-repeat:repeat-x;
+	margin-top: 40px;
+	margin-left:0px;
+	padding:60px;
+	font-size: 15px;
+	font-family: Georgia;
+	line-height: 25px;
+	color: #ffffff;
+	-webkit-transition: all 0.5s ease;
+	padding-top:20px;
+	padding-bottom:20px;
+	-webkit-transition: none;
+	-moz-transition: none;
+	}
+
+.rsvp {
+	margin-left:0px;
+	float: left;
+	height:227px;
+    width:230px;
+    height:226px;
+    background-image:url('../images/rsvpsprite2.png'); 
+    display:block;
+    display:clear;
+    outline:none;
+    -webkit-transition: none;
+	-moz-transition: none;
+}
+
+.rsvp a:hover{
+	background: url('../images/rsvpsprite.png') 0 -226px;
+	text-decoration:none;
+	outline:none;
+	-webkit-transition: none;
+	-moz-transition: none;
+}
+
+.rsvp a:visited{
+	text-decoration:none;
+	outline:none;
+	-webkit-transition: none;
+	-moz-transition: none;
+}
+
+
+#receptioncopy {
+	margin-top:0px;
+	margin-right:0px;
+	padding-left:277px;
+	}
+	
+#receptioncopy a:link {
+	color:#ffffff;
+	text-decoration:underline;
+	outline:none;
+}
+
+#receptioncopy a:visited {
+	color:#ffffff;
+	text-decoration:underline;
+	outline:none;
+}
+
+#receptioncopy a:hover{
+	color:#C6B37F;
+	text-decoration:underline;
+	outline:none;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+
+#registrysection{
+	width:1100px;
+	height:150px;
+	margin-top:300px;
+	padding-top:20px;
+}
+
+.targetlogo{
+	float:right;
+	background-image:url('../images/targetsprite.png');
+	background-repeat:no-repeat; 
+	width:157px;
+    height:157px;
+    display:block;
+    padding-left: 200px;
+}
+
+.targetlogo a:hover {
+	background: url('../images/targetsprite.png') 0 -157px;
+	padding-left: 200px;
+	background-repeat:no-repeat;  
+	}
+
+	
+
+
+.amazonlogo{
+	background-image:url('../images/amazonsprite.png');
+	background-repeat:no-repeat; 
+	width:308px;
+    height:94px;
+    display:block;
+    margin-top:40px;
+
+}
+
+.amazonlogo a:hover {
+	background: url('../images/amazonsprite.png') 0 -94px;
+	background-repeat:no-repeat;
+}
+
+
+#extrasection{
+height:1220px;
+margin-top:210px;
+padding-top:25px;
+}
+
+
+#wheretogo {
+	margin-top: 100px;
+}
+
+.extracopy {
+	font-family: Georgia;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.one {
+	float: left;
+	margin-top: 60px;
+}
+
+
+.two {
+	float: left;
+	margin-top: 60px;
+	padding-left:60px;
+}
+
+.three {
+	float: left;
+	margin-top: 60px;
+	padding-left:60px;
+}
+
+.onecopy {
+	float:right;
+	font-family: Georgia;
+	color: #656565;
+	font-size: 13px;
+	width: 302px;
+	padding-top:13px;
+	padding-left:6px;
+	display:clear;
+	display:block;
+	line-height: 19px;
+}
+
+.twocopy {
+	float:right;
+	font-family: Georgia;
+	color: #656565;
+	font-size: 13px;
+	width: 302px;
+	padding-top:13px;
+	padding-left:66px;
+	display:clear;
+	display:block;
+	line-height: 19px;
+}
+
+.threecopy {
+	float:right;
+	font-family: Georgia;
+	color: #656565;
+	font-size: 13px;
+	width: 302px;
+	padding-top:13px;
+	padding-left:62px;
+	display:clear;
+	display:block;
+	line-height: 19px;
+}
+
+.four {
+	float: left;
+	margin-top: 60px;
+}
+
+
+.five {
+	float: left;
+	margin-top: 60px;
+	padding-left:60px;
+}
+
+.six {
+	float: left;
+	margin-top: 60px;
+	padding-left:60px;
+}
+
+
+.fourcopy {
+	float:right;
+	font-family: Georgia;
+	color: #656565;
+	font-size: 13px;
+	width: 302px;
+	padding-top:13px;
+	padding-left:6px;
+	display:clear;
+	display:block;
+	line-height: 19px;
+}
+
+.fivecopy {
+	float:right;
+	font-family: Georgia;
+	color: #656565;
+	font-size: 13px;
+	width: 302px;
+	padding-top:13px;
+	padding-left:66px;
+	display:clear;
+	display:block;
+	line-height: 19px;
+}
+
+.sixcopy {
+	float:right;
+	font-family: Georgia;
+	color: #656565;
+	font-size: 13px;
+	width: 302px;
+	padding-top:13px;
+	padding-left:62px;
+	display:clear;
+	display:block;
+	line-height: 19px;
+}
+
+/*
+	A horrible way to do this...
+*/
+
+
+	
+.onecopy a:link, a:visited {
+	color:#656565;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.onecopy a:hover, a:active {
+	color:#C6B37F;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+
+.twocopy a:link, a:visited {
+	color:#656565;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.twocopy a:hover, a:active {
+	color:#C6B37F;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.threecopy a:link, a:visited {
+	color:#656565;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.threecopy a:hover, a:active {
+	color:#C6B37F;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.fourcopy a:link, a:visited {
+	color:#656565;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.fourcopy a:hover, a:active {
+	color:#C6B37F;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.fivecopy a:link, a:visited {
+	color:#656565;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.fivecopy a:hover, a:active {
+	color:#C6B37F;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.sixcopy a:link, a:visited {
+	color:#656565;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.sixcopy a:hover, a:active {
+	color:#C6B37F;
+	text-decoration:underline;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+#footer{ 
+	
+	margin-top: -240px;
+	padding-left: 200px;
+	
+}
+
+
+
+
+/*
+	Anchors
+*/
+
+
+	
+	
+

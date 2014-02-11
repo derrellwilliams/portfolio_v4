@@ -108,6 +108,24 @@ footer {
     color: #fff;
     margin: 25px 0 0 20px;
   }
+
+  .versions {
+    font-family: 'gt_walsheim_bold', 'helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #9c9a9a;
+    margin: 10px 0 0 20px;
+    text-align: left;
+    clear: both;
+    padding: 0;
+    line-height: 0px;
+
+    a{
+    color: #807e7e;
+    }
+  }
 }
 
 #about_footer{
