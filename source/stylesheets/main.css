@@ -1,0 +1,166 @@
+/* line 3, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+::selection {
+  background: #ffff9e; }
+
+/* line 4, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+::-moz-selection {
+  background: #ffff9e; }
+
+/* line 5, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+img::selection {
+  background: transparent; }
+
+/* line 6, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+img::-moz-selection {
+  background: transparent; }
+
+/* line 7, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+body {
+  -webkit-tap-highlight-color: #ffff9e; }
+
+/* line 17, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+body {
+  background-color: #e5e5e5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important; }
+
+/* line 23, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+a {
+  text-decoration: none;
+  color: #474747; }
+
+/* line 35, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 41, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+#header {
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0; }
+  /* line 49, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+  #header .logo {
+    font-family: 'gt_walsheim_bold', 'helvetica';
+    font-size: 25px;
+    float: left;
+    margin: 14px 0 0 20px;
+    color: #00b490;
+    border: 4px solid #eaeaea;
+    padding: 1px 5px 1px 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  /* line 60, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+  #header a:hover .logo {
+    border: 4px solid #5a5090;
+    color: #5a5090; }
+  /* line 66, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+  #header img {
+    float: left;
+    margin: 15px 0 0 20px; }
+  /* line 71, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+  #header ul {
+    list-style: none;
+    float: right;
+    padding: 8px; }
+    /* line 76, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+    #header ul li {
+      display: inline;
+      font-family: 'gt_walsheim_bold','helvetica';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding-right: 30px;
+      color: #474747; }
+      /* line 86, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+      #header ul li :hover {
+        border-bottom: 3px solid #5a5090;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+
+/* line 94, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+footer {
+  background-color: #343434;
+  height: 77px;
+  width: 100%;
+  clear: both;
+  margin-top: 30px; }
+  /* line 101, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+  footer .rights {
+    float: left;
+    font-family: 'gt_walsheim_bold', 'helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 25px 0 0 20px; }
+  /* line 112, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+  footer .versions {
+    font-family: 'gt_walsheim_bold', 'helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #9c9a9a;
+    margin: 10px 0 0 20px;
+    text-align: left;
+    clear: both;
+    padding: 0;
+    line-height: 0px; }
+    /* line 125, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+    footer .versions a {
+      color: #807e7e; }
+
+/* line 131, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+#about_footer {
+  margin-top: 0px; }
+
+/* line 135, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+#contact_footer {
+  bottom: 0;
+  position: absolute; }
+
+@media screen and (max-width: 480px) {
+  /* line 142, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+  #header {
+    height: 100px; }
+    /* line 145, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+    #header .logo {
+      float: none;
+      text-align: center;
+      margin: 14px 14px 5px 20px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    /* line 152, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+    #header ul {
+      list-style: none;
+      float: none;
+      padding: 0px;
+      text-align: center;
+      margin-top: 7px; }
+      /* line 159, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+      #header ul li {
+        padding-right: 28px;
+        color: #474747; }
+        /* line 163, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+        #header ul li:last-child {
+          padding-right: 0px; }
+
+  /* line 169, /Users/matthewwilliams/portfolio_v4/source/stylesheets/main.scss */
+  .rights {
+    display: none; } }
