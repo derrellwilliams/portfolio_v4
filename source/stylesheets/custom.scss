@@ -774,3 +774,59 @@
     }
   }
 }
+
+/*The Song Pages*/
+.alpha-songs {
+    margin-bottom: 10px;
+    margin: 0 auto;
+
+.circle-letter {
+      font-family: 'gt_walsheim_medium', helvetica;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 25px;
+      text-transform: uppercase;
+      background-color: $purple;
+      border-radius: 260px;
+      color: #fff;
+      width: 40px;
+      height: 37px;
+      text-align: center;
+      padding-top: 3px;
+
+  }
+
+  h2 {
+    font-family: 'gt_walsheim_medium', helvetica;
+    font-size: 34px;
+    color: #575757;
+    margin: 5px 0 45px 0;
+  }
+
+    a:hover {
+      color: $purple;
+      @include transition;
+      border-bottom: 5px solid $green;
+      padding-bottom:4px;
+
+  }
+}
+
+.lyrics-container {
+  margin: 0 20px;
+
+  .chord {
+    font-family: 'gt_walsheim_bold', helvetica;
+    color: $purple;
+    text-align: left;
+  }
+
+.lyrics {
+  margin: 95px auto;
+  font-family:'Adelle W01 Light';    
+  font-size: 17px;
+  line-height: 35px;
+  color: #575757;
+  display: block;
+  }
+}
