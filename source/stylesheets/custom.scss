@@ -727,7 +727,7 @@
 
   .contact_type  {
     position: relative;
-    margin-top: 12%;
+    margin-top: 20%;
     transform: translateY(-50%);
 
     h1 {
@@ -753,24 +753,24 @@
     }
   }
 
-@media (max-width: 700px) {
+@media (max-width: 970px) {
    .contact_type  {
     h1 {
       max-width: 70%;
       font-size: 30px;
       line-height: 43px;
-      margin-top: 40%;
+      margin-top: 35%;
     }
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
    .contact_type  {
     h1 {
       max-width: 90%;
       font-size: 24px;
       line-height: 33px;
-      margin-top: 40%;
+      margin-top: 50%;
     }
   }
 }
